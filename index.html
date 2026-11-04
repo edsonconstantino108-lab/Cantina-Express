@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Peça na Cantina Express e retire sem fila.">
+  <title>Cantina Express</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#topo">CANTINA <strong>EXPRESS</strong></a>
+    <nav id="nav-links">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#combos">Combos</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <div class="acoes">
+      <span>Retirada: <strong id="pickup-time">10:15</strong></span>
+      <button id="open-cart">Carrinho (<span id="bag-count">0</span>)</button>
+      <button id="menu-toggle" class="menu-botao" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="topo">
+      <div>
+        <p class="etiqueta">PEDIU. PEGOU. PARTIU.</p>
+        <h1>O seu lanche pronto <span>sem fila.</span></h1>
+        <p>Escolha, agende e retire no balcão. Mais tempo para a sua pausa e menos tempo à espera.</p>
+        <a class="botao" href="#cardapio">Ver cardápio</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1737700087791-e5fd25223278?auto=format&fit=crop&w=1000&q=85" alt="Sanduíche fresco">
+    </section>
+
+    <section class="secao" id="cardapio">
+      <p class="etiqueta">FEITO AGORA, PARA AGORA</p>
+      <h2>O que vai querer hoje?</h2>
+      <div id="filters" class="filtros"></div>
+      <div id="product-grid" class="produtos"></div>
+    </section>
+
+    <section class="secao combo" id="combos">
+      <div>
+        <p class="etiqueta">POUPE NO SEU PEDIDO</p>
+        <h2>Monte o seu combo</h2>
+        <p>Escolha um prato, uma bebida e um acompanhamento. Receba 15% de desconto.</p>
+      </div>
+      <div id="combo-builder" class="construtor"></div>
+    </section>
+
+    <section class="secao" id="como-funciona">
+      <p class="etiqueta">A SUA PAUSA, NO SEU HORÁRIO</p>
+      <h2>Quando pretende retirar?</h2>
+      <p>Escolha o horário em que deseja levantar o seu pedido.</p>
+      <div id="time-options" class="horarios"></div>
+      <p>O seu pedido estará pronto às <strong id="selected-time">10:15</strong>.</p>
+    </section>
+  </main>
+
+  <footer id="localizacao">
+    <h2>Cantina Express</h2>
+    <p>Boa comida. Zero fila. A sua pausa rende mais.</p>
+    <p>Localização: Cantina da escola</p>
+    <p>Horário: Segunda a sexta, das 07:00 às 21:00.</p>
+  </footer>
+
+  <div id="overlay-root"></div>
+  <div id="toast-root" role="status" aria-live="polite"></div>
+</body>
+</html>
