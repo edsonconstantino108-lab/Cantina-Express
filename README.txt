@@ -1,4 +1,4 @@
-CANTINA EXPRESS — CÓDIGOS SIMPLIFICADOS
+CANTINA EXPRESS 
 
 1. Extraia os ficheiros para a mesma pasta.
 2. Abra index.html no navegador.
